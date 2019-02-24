@@ -1,0 +1,20 @@
+<div class="centered-container">
+  <mat-toolbar>Add an item to do</mat-toolbar>
+  <mat-card class="square-card">
+    <mat-card-content>
+      <div class="todo-form">
+        <mat-form-field>
+          <mat-label>To Do</mat-label>
+          <input [(ngModel)]="item" matInput placeholder="What do you need to do?">
+          <mat-icon matRipple color="accent" matSuffix (click)="addItem()">add</mat-icon>
+          <mat-hint>Adopt a cat, save the world, cook dinner</mat-hint>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-fab>
+          <mat-icon>save</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
